@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Taskmanager.Class
 {
-    internal class Task  
+    public class Task  
     {
         [Key]
         public int Id { get; set; }
@@ -18,6 +18,6 @@ namespace Taskmanager.Class
         public int UserId { get; set; }
         public int TaskTypeId { get; set; }
         public User User { get; set; }
-        public TypeTask TypeTask { get; set; }
+        public TypeTask TaskType { get; set; }
     }
 }

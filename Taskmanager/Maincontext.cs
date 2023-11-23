@@ -16,8 +16,8 @@ namespace Taskmanager
     internal class Maincontext :DbContext
     {
         public DbSet<User> Users { get; set; }
-        public DbSet<Task> Task { get; set; }
-        public DbSet<TypeTask> TypeTask { get; set; }
+        public DbSet<Task> Tasks { get; set; }
+        public DbSet<TypeTask> TypeTasks { get; set; }
 
 
 
@@ -57,8 +57,8 @@ namespace Taskmanager
 
         public Maincontext()
         {
-            Database.EnsureDeleted();
-            Database.EnsureCreated();
+            //Database.EnsureDeleted();
+            //Database.EnsureCreated();
         }
     }
 }

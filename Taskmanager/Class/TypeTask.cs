@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Taskmanager.Class
 {
-    internal class TypeTask
+    public class TypeTask
     {
         [Key]
         public int Id { get; set; }
